@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: url(/SRC/img/MARVEL_COMICS.png);  
+}
+
+.container {
+    position: relative; /* controlar o posicionamento de um elemento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; /* Da uma olhada */
+    flex-wrap: wrap; /* Se o tamanho não for suficiente vai ser quebrado em outras linhas */
+    z-index: 1; /* Enpilhamento de itens */
+}
+
+/*---------------------------------------CARD 1------------------------------------------------------------------------------*/
+
+.container .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 25px 25px 65px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    background: url(/SRC/img/doctor_strange.jpg); /* Alterar */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; /* controlar o que acontece quando o conteúdo de um elemento excede as dimensões  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #daa520;
+    border-left: 2px solid #daa520;
+    transition: transform 1s, opacity 1s, background 1s; /* Alteração feita aqui */
+}
+
+.container .card .information {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px); /*faz descer a animação */
+    opacity: 0;
+    transition: 1s;
+    color: white;
+    font-size: 30px;
+    transition: transform 1s, opacity 1s;
+}
+
+.container .card:hover .information {
+    transform: translateY(0px); /* Volta ao conto de inicio */
+    opacity: 1;
+    background: rgba(0, 0, 0, .5);
+    width: 280px;
+    height: 400px;
+}
+
+/*---------------------------------------CARD 2------------------------------------------------------------------------------*/
+
+.container .card2 {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 25px 25px 65px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    background: url(/SRC/img/spider_man.png); /* Alterar */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; /* controlar o que acontece quando o conteúdo de um elemento excede as dimensões  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #daa520;
+    border-left: 2px solid #daa520;
+    transition: transform 1s, opacity 1s, background 1s; /* Alteração feita aqui */
+}
+
+.container .card2 .information2 {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px); /*faz descer a animação */
+    opacity: 0;
+    transition: 1s;
+    color: white;
+    font-size: 30px;
+    transition: transform 1s, opacity 1s;
+}
+
+.container .card2:hover .information2 {
+    transform: translateY(0px); /* Volta ao conto de inicio */
+    opacity: 1;
+    background: rgba(0, 0, 0, .5);
+    width: 280px;
+    height: 400px;
+}
+
+/*---------------------------------------CARD 3------------------------------------------------------------------------------*/
+
+.container .card3 {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 25px 25px 65px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    background: url(/SRC/img/wolverine.jpg); /* Alterar */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden; /* controlar o que acontece quando o conteúdo de um elemento excede as dimensões  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #daa520;
+    border-left: 2px solid #daa520;
+    transition: transform 1s, opacity 1s, background 1s; /* Alteração feita aqui */
+}
+
+.container .card3 .information3 {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px); /*faz descer a animação */
+    opacity: 0;
+    /*transition: 1s;*/
+    color: white;
+    font-size: 30px;
+    transition: transform 1s, opacity 1s; /*Se de ruim ja sabe*/
+}
+
+.container .card3:hover .information3 {
+    transform: translateY(0px); /* Volta ao conto de inicio */
+    opacity: 1;
+    background: rgba(0, 0, 0, .5);
+    width: 280px;
+    height: 400px;
+}
